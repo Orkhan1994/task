@@ -5,14 +5,18 @@ public class Student {
     private String firstName;
     private  String lastName;
     private int age;
+    private int totalPoint;
+
+
 
     public Student() {
     }
 
-    public Student(String firstName, String lastName, int age) {
+    public Student(String firstName, String lastName, int age, int totalPoint) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
+        this.totalPoint = totalPoint;
     }
 
     public String getFirstName() {
@@ -38,6 +42,13 @@ public class Student {
     public void setAge(int age) {
         this.age = age;
     }
+    public int getTotalPoint() {
+        return totalPoint;
+    }
+
+    public void setTotalPoint(int totalPoint) {
+        this.totalPoint = totalPoint;
+    }
 
     @Override
     public String toString() {
@@ -45,6 +56,7 @@ public class Student {
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", age=" + age +
+                ", totalPoint=" + totalPoint +
                 '}';
     }
 }

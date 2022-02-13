@@ -28,7 +28,7 @@ public class StudentMain {
         studentList.add(student9);
         studentList.add(student10);
 
-   printStudentListFromAge19GreatThan(studentList);
+           multiplactionTable(5);
 
     }
 
@@ -37,6 +37,12 @@ public class StudentMain {
             if (studentList.get(i).getAge() > 19) {
                 System.out.println(studentList.get(i));
             }
+        }
+    }
+
+    public static void multiplactionTable(int number){
+        for (int i=1;i<=10;i++){
+            System.out.println(number+" x "+i+" = "+i*number);
         }
     }
 }
